@@ -160,7 +160,18 @@ function Index() {
 
   return (
     <div className="relative min-h-screen w-full max-w-full overflow-x-hidden bg-background text-ink [overflow-anchor:none]">
-      <TopRibbon />
+      {/* ANOVA watermark — fixed behind all content */}
+      <div
+        aria-hidden
+        className="pointer-events-none fixed inset-0 z-0 bg-[url('/anova-watermark.png')] bg-center bg-no-repeat"
+        style={{
+          backgroundSize: "800px auto",
+          backgroundPosition: "center top",
+        }}
+      />
+
+      <div className="relative z-10">
+        <TopRibbon />
       <MetaBar />
 
       <main
@@ -228,6 +239,7 @@ function Index() {
       )}
       {privacyOpen && <PolicyDialog kind="privacy" onClose={() => setPrivacyOpen(false)} />}
       {gdprOpen && <PolicyDialog kind="gdpr" onClose={() => setGdprOpen(false)} />}
+      </div>
     </div>
   );
 }
