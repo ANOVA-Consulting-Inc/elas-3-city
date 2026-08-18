@@ -27,11 +27,11 @@ function AuthPage() {
     setBusy(true);
     try {
       if (mode === "signin") {
-        const { error } = await supabase.auth.signInWithPassword({ email, password });
+        const { error } = await supabase.auth.signInWithPassword({ email: email.trim().toLowerCase(), password });
         if (error) throw error;
       } else {
         const { error } = await supabase.auth.signUp({
-          email,
+          email: email.trim().toLowerCase(),
           password,
           options: { emailRedirectTo: `${window.location.origin}/admin` },
         });
