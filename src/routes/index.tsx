@@ -160,7 +160,6 @@ function Index() {
 
   return (
     <div className="relative min-h-screen w-full max-w-full overflow-x-hidden bg-background text-ink [overflow-anchor:none]">
-      {ack && <Watermark name={ack.name} email={ack.email} />}
       <TopRibbon />
       <MetaBar />
 
@@ -1971,3 +1970,5 @@ function Colophon({
     </footer>
   );
 }
+
+
