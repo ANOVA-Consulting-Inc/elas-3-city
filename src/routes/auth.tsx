@@ -13,6 +13,7 @@ function AuthPage() {
   const [password, setPassword] = useState("");
   const [err, setErr] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
+  const [showPw, setShowPw] = useState(false);
 
   useEffect(() => {
     supabase.auth.getUser().then(({ data }) => {
@@ -64,7 +65,12 @@ function AuthPage() {
           </label>
           <label className="block">
             <span className="text-[11px] uppercase tracking-[0.18em] text-neutral-600">Password</span>
-            <input type="password" required minLength={6} value={password} onChange={(e) => setPassword(e.target.value)} className="mt-1 w-full border border-neutral-300 px-3 py-2 text-[14px] outline-none focus:border-neutral-900" />
+            <div className="relative mt-1">
+              <input type={showPw ? "text" : "password"} required minLength={6} value={password} onChange={(e) => setPassword(e.target.value)} className="w-full border border-neutral-300 px-3 py-2 pr-16 text-[14px] outline-none focus:border-neutral-900" />
+              <button type="button" onClick={() => setShowPw((v) => !v)} aria-label={showPw ? "Hide password" : "Show password"} className="absolute inset-y-0 right-0 px-3 text-[10px] uppercase tracking-[0.15em] text-neutral-500 hover:text-neutral-900">
+                {showPw ? "Hide" : "Show"}
+              </button>
+            </div>
           </label>
 
           {err && <p className="text-[12px] text-red-700">{err}</p>}
