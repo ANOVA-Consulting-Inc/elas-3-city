@@ -80,6 +80,10 @@ function AuthPage() {
           </button>
         </form>
 
+        <p className="mt-6 text-center font-mono text-[10px] text-neutral-400 select-none">
+          Instance: {(import.meta.env.VITE_SUPABASE_URL ?? "").replace("https://", "").split(".")[0] || "unknown"}
+        </p>
+
         <button onClick={() => setMode(mode === "signin" ? "signup" : "signin")} className="mt-5 w-full text-[12px] text-neutral-500 hover:text-neutral-900">
           {mode === "signin" ? "Need an account? Sign up" : "Already have an account? Sign in"}
         </button>
