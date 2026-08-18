@@ -24,7 +24,7 @@ export const listParticipations = createServerFn({ method: "GET" })
 
 export const deleteParticipation = createServerFn({ method: "POST" })
   .middleware([requireSupabaseAuth])
-  .inputValidator((input: unknown) => z.object({ id: z.string().uuid() }).parse(input))
+  .validator((input: unknown) => z.object({ id: z.string().uuid() }).parse(input))
   .handler(async ({ data, context }) => {
     const { data: isAdmin } = await context.supabase.rpc("has_role", {
       _user_id: context.userId,
@@ -44,7 +44,7 @@ export const deleteParticipation = createServerFn({ method: "POST" })
 
 export const getCertificatePdfUrl = createServerFn({ method: "POST" })
   .middleware([requireSupabaseAuth])
-  .inputValidator((input: unknown) => z.object({ id: z.string().uuid() }).parse(input))
+  .validator((input: unknown) => z.object({ id: z.string().uuid() }).parse(input))
   .handler(async ({ data, context }) => {
     const { data: isAdmin } = await context.supabase.rpc("has_role", {
       _user_id: context.userId,
@@ -62,7 +62,7 @@ export const getCertificatePdfUrl = createServerFn({ method: "POST" })
 
 export const regenerateCertificatePdf = createServerFn({ method: "POST" })
   .middleware([requireSupabaseAuth])
-  .inputValidator((input: unknown) => z.object({ id: z.string().uuid() }).parse(input))
+  .validator((input: unknown) => z.object({ id: z.string().uuid() }).parse(input))
   .handler(async ({ data, context }) => {
     const { data: isAdmin } = await context.supabase.rpc("has_role", {
       _user_id: context.userId,
