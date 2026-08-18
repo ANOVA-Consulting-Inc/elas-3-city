@@ -165,8 +165,8 @@ function Index() {
         aria-hidden
         className="pointer-events-none fixed inset-0 z-0 bg-[url('/anova-watermark.png')] bg-center bg-no-repeat opacity-[0.15]"
         style={{
-          backgroundSize: "800px auto",
-          backgroundPosition: "center top",
+          backgroundSize: "min(80vw, 500px)",
+          backgroundPosition: "center center",
         }}
       />
 
