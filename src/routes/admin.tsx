@@ -1,4 +1,4 @@
-﻿import { createFileRoute, useNavigate, Link } from "@tanstack/react-router";
+﻿import { createFileRoute, useNavigate, Link, redirect } from "@tanstack/react-router";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { useServerFn } from "@tanstack/react-start";
 import { useEffect, useMemo, useState } from "react";
@@ -13,6 +13,13 @@ import {
 import { PdfPreview } from "@/components/admin/PdfPreview";
 
 export const Route = createFileRoute("/admin")({
+  // Client-only route: the session lives in browser localStorage, so guard in
+  // beforeLoad and skip SSR (same pattern as an _authenticated layout).
+  ssr: false,
+  beforeLoad: async () => {
+    const { data, error } = await supabase.auth.getUser();
+    if (error || !data.user) throw redirect({ to: "/auth" });
+  },
   component: AdminPage,
 });
 
