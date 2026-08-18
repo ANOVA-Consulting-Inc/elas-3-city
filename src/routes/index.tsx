@@ -163,7 +163,7 @@ function Index() {
       {/* ANOVA watermark — fixed behind all content */}
       <div
         aria-hidden
-        className="pointer-events-none fixed inset-0 z-0 bg-[url('/anova-watermark.png')] bg-center bg-no-repeat"
+        className="pointer-events-none fixed inset-0 z-0 bg-[url('/anova-watermark.png')] bg-center bg-no-repeat opacity-[0.15]"
         style={{
           backgroundSize: "800px auto",
           backgroundPosition: "center top",
