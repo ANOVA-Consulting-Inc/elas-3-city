@@ -19,7 +19,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const REF = "ELAS-3-CITY / EOI / ANOVA / AUG-2026 / v1.0";
+const REF = "ELAS-3-CITY / EOI / ANOVA / 24-AUG-2026 / v2.0";
 
 const PUBLIC_TOC = [
   { id: "overview", num: "I", label: "Executive Summary" },
@@ -483,16 +483,18 @@ function Hero() {
             ELAS<span className="italic text-accent">-3-</span>CITY
           </h1>
           <p className="mt-6 max-w-[58ch] font-serif text-[18px] italic leading-snug text-ink-muted sm:text-[22px] md:text-[26px]">
-            Elasticity, tokenization, and the three facets of supply chain, compute and energy — a
-            governed sustainability and community-value platform.
+            Elasticity, Web3 tokenization, and the three facets of supply chain, compute resource
+            and utilities — a governed sustainability, essential-infrastructure and community-value
+            platform.
           </p>
           <p className="mt-8 max-w-[72ch] text-[15px] leading-relaxed text-ink-muted [overflow-wrap:anywhere]">
-            ELAS-3-CITY is a community-centered sustainability intelligence, participation and
-            value-circulation platform proposed by ANOVA Consulting Inc. for governments,
-            municipalities, businesses, organizations, community pods and DAOs that seek to measure,
-            verify, manage and share sustainability savings across supply chain, compute and energy
-            systems. This Expression of Interest is intended to support discussion, co-design and a
-            possible working arrangement.
+            ELAS-3-CITY is a community-centred sustainability, essential-infrastructure and
+            community-benefit platform proposed by ANOVA Consulting Inc. for governments,
+            municipalities, towns, public utilities, businesses, organizations, industrial plants,
+            supply-chain actors, community pods and DAOs that seek to identify, verify, manage and
+            share sustainability savings and public value across supply chain, compute resource and
+            utilities. This Expression of Interest is intended to support discussion, co-design and
+            a possible working arrangement.
           </p>
 
           <div className="mt-12 grid grid-cols-1 gap-5 border-t border-rule pt-8 sm:grid-cols-2 md:grid-cols-4 md:gap-6">
@@ -503,7 +505,7 @@ function Hero() {
             <Meta k="Prepared For" v="Prospective Municipal & Institutional Partners" />
             <Meta k="Circulation" v="Limited — Named Recipients Only" />
             <Meta k="Author" v="ANOVA / ELAS-3-CITY" />
-            <Meta k="Revision" v="v1.0" />
+            <Meta k="Revision" v="v2.0" />
           </div>
         </div>
 
@@ -630,7 +632,7 @@ function SectionExecutive() {
             <div className="sticky top-8 space-y-6">
               <Pill label="Theme" value="Sustainability & community value" />
               <Pill label="Posture" value="Community-first digital infrastructure" />
-              <Pill label="Scope" value="Supply chain · Compute · Energy" />
+              <Pill label="Scope" value="Supply chain · Compute · Utilities" />
               <Pill label="Audience" value="Municipality · Business · Community" />
               <blockquote className="border-l-2 border-accent pl-4 font-serif text-[18px] italic leading-snug text-ink-muted">
                 "A memory, a referee, and a witness for sustainable community value."
@@ -640,7 +642,7 @@ function SectionExecutive() {
           <article className="min-w-0 space-y-8 md:col-span-9">
             <DropCapP first="E">
               LAS-3-CITY derives its name from three linked ideas — Elasticity, Web3 tokenization,
-              and the Tri facets of supply chain, compute and energy. It is proposed as a
+              and the Tri facets of supply chain, compute resource and utilities. It is proposed as a
               community-centered sustainability intelligence, participation and value-circulation
               platform that helps governments, businesses, organizations, community pods and DAOs
               identify, verify, manage and share sustainability savings.
@@ -652,13 +654,16 @@ function SectionExecutive() {
               provisioning, and token-ready recognition and redemption mechanisms.
             </p>
             <p className="text-[17px] leading-[1.75] text-ink-muted">
-              ELAS-3-CITY is aligned with SDG 9 (Industry, Innovation and Infrastructure), SDG 11
-              (Sustainable Cities and Communities), and SDG 12 (Responsible Consumption and
-              Production), and is informed by the United Nations 10-Year Framework of Programs on
-              Sustainable Consumption and Production Patterns.
+              ELAS-3-CITY applies the In-Five Framework — SDG 6 (Clean Water and Sanitation),
+              SDG 7 (Affordable and Clean Energy), SDG 9 (Industry, Innovation and Infrastructure),
+              SDG 11 (Sustainable Cities and Communities) and SDG 12 (Responsible Consumption and
+              Production) — as its minimum operational scope for essential services, infrastructure,
+              productive systems, community conditions and responsible resource practices, and is
+              informed by the UN 10-Year Framework of Programmes on Sustainable Consumption and
+              Production (10YFP).
             </p>
             <div className="grid grid-cols-1 gap-4 pt-6 sm:grid-cols-3">
-              <StatCard k="Facets" v="3" sub="Supply chain · Compute · Energy" />
+              <StatCard k="Facets" v="3" sub="Supply chain · Compute · Utilities" />
               <StatCard k="Value forms" v="3" sub="Savings · Utility · Engagements" />
               <StatCard k="Ecosystem scaffolds" v="8" sub="Community · Soil · Water · Climate..." />
             </div>
@@ -721,7 +726,7 @@ function SectionContext() {
               <p className="text-[14px] leading-[1.75] text-ink-muted">
                 ELAS-3-CITY is a sustainability and ecosystem-value platform that supports the
                 measurement and management of savings, utility and engagement outcomes across an
-                interconnected participant ecosystem — across supply chain, compute and energy.
+                interconnected participant ecosystem — across supply chain, compute resource and utilities.
               </p>
               <p className="mt-3 text-[14px] leading-[1.75] text-ink-muted">
                 The detailed proposed capabilities, operating model, control architecture and
@@ -782,7 +787,7 @@ function GatedSections({ onSectionSeen }: { onSectionSeen: (id: string) => void 
                 label="Tokenization"
                 value="Recognition & circulation of verified ecosystem, social & financial value"
               />
-              <Pill label="Tri facets" value="Supply chain · Compute · Energy" />
+              <Pill label="Tri facets" value="Supply chain · Compute · Utilities" />
               <blockquote className="border-l-2 border-accent pl-4 font-serif text-[18px] italic leading-snug text-ink-muted">
                 "Sustainability savings can be measured responsibly, converted into practical
                 utility, and circulated back to contributors."
@@ -793,7 +798,7 @@ function GatedSections({ onSectionSeen }: { onSectionSeen: (id: string) => void 
                 ELAS-3-CITY is proposed as a modular sustainability and ecosystem-value platform
                 that supports the measurement and management of savings, utility and engagements
                 across an interconnected participant ecosystem. Each facet — supply chain, compute
-                resources, and energy grid/resources — may be assessed through the Greenhouse Gas
+                resources, and utilities — may be assessed through the Greenhouse Gas
                 Protocol perspectives: Scope 1, Scope 2, Scope 3a and Scope 3b.
               </p>
               <p>
@@ -880,7 +885,7 @@ function GatedSections({ onSectionSeen }: { onSectionSeen: (id: string) => void 
             <div className="mt-8 grid grid-cols-1 gap-4 pt-6 sm:grid-cols-3">
               <StatCard k="Value forms" v="3" sub="Savings · Utility · Engagements" />
               <StatCard k="Ecosystem scaffolds" v="8" sub="Community · Soil · Water · Climate..." />
-              <StatCard k="Gov't alignment" v="3" sub="SDG 9 · 11 · 12" />
+              <StatCard k="Gov't alignment" v="5" sub="SDG 6 · 7 · 9 · 11 · 12" />
             </div>
           </div>
         </div>
@@ -903,7 +908,7 @@ function GatedSections({ onSectionSeen }: { onSectionSeen: (id: string) => void 
                 sub="Community · Food · Climate · Soil · Water · Energy · Biodiversity · Culture"
               />
               <StatCard k="GHG scopes" v="4" sub="Scope 1 · 2 · 3a · 3b" />
-              <StatCard k="Facets" v="3" sub="Supply chain · Compute · Energy" />
+              <StatCard k="Facets" v="3" sub="Supply chain · Compute · Utilities" />
               <StatCard k="Value forms" v="3" sub="Savings · Utility · Engagements" />
             </div>
             <div className="mt-12 grid min-w-0 grid-cols-1 gap-6 sm:grid-cols-2">
@@ -979,9 +984,9 @@ function GatedSections({ onSectionSeen }: { onSectionSeen: (id: string) => void 
           <NodeHeader num="IX" title="Governance & Safeguards" id="governance" />
           <div className="mt-12 max-w-[80ch] space-y-5 text-[16px] leading-[1.8] text-ink-muted">
             <p>
-              Because ELAS-3-CITY may connect environmental claims, financial incentives, community
-              benefits, participant data and tokenized records, governance is built into the
-              platform from the outset:
+              Because ELAS-3-CITY may connect sustainability claims, essential services, financial
+              incentives, community benefits, participant data, AI-enabled systems and token-ready
+              records, governance is built into the platform from the outset:
             </p>
             <ul className="list-disc pl-5 space-y-1.5">
               <li>Clear boundaries for emissions accounting across Scope 1, 2, 3a and 3b</li>
@@ -1008,7 +1013,16 @@ function GatedSections({ onSectionSeen }: { onSectionSeen: (id: string) => void 
               <li>Anti-fraud controls, duplicate-claim detection and audit histories</li>
               <li>
                 Controls to prevent double counting of emissions reductions, environmental
-                attributes and tokenized benefits
+                attributes, cost savings, service benefits and tokenized value
+              </li>
+              <li>
+                AI governance — approved data sources, model-routing policies, human-review
+                thresholds, output-quality measures, error monitoring, access controls and
+                auditable records of high-impact use
+              </li>
+              <li>
+                Published benefit-sharing, redemption, expiration, transferability, dispute
+                resolution and consumer-protection rules before any issuance
               </li>
             </ul>
           </div>
@@ -1023,7 +1037,7 @@ function GatedSections({ onSectionSeen }: { onSectionSeen: (id: string) => void 
             <RoadmapPhase n="1" title="Foundation and measurement">
               Governance charter, stakeholder mapping and policy co-design; organizational, asset,
               facility and participant onboarding; supply-chain, compute-resource and
-              energy-resource baselines; Scope 1–3b boundary and evidence configuration; core
+              utilities baselines; Scope 1–3b boundary and evidence configuration; core
               Savings, Utility and Engagements data model; eight-scaffold ecosystem-service rubric;
               basic dashboards and audit records.
             </RoadmapPhase>
@@ -1868,12 +1882,12 @@ function FootnotesBlock({ ack }: { ack: boolean }) {
         <div className="micro text-classified mb-3">FOOTNOTES · RESTRICTED DOSSIER</div>
         <ol className="list-decimal pl-5 space-y-1">
           <li>
-            UN 10-Year Framework of Programs on Sustainable Consumption and Production Patterns
-            (10YFP).
+            UN 10-Year Framework of Programmes on Sustainable Consumption and Production Patterns
+            (10YFP) — UNEP Interim Progress Report, 2014.
           </li>
           <li>Greenhouse Gas Protocol corporate standard scopes 1, 2, 3a and 3b.</li>
-          <li>SDG 9, 11 and 12.</li>
-          <li>FAO Restoration Monitoring Wheel — ecosystem-service scaffolds.</li>
+          <li>In-Five Framework — SDG 6, 7, 9, 11 and 12.</li>
+          <li>FAO Ecosystem-Service Framework — eight-scaffold ecosystem-service rubric.</li>
           <li>This Expression of Interest is exploratory and intended to support co-design.</li>
         </ol>
       </div>
@@ -1900,7 +1914,7 @@ function Colophon({
               <div className="min-w-0">
                 <div className="font-serif text-[28px] italic">ELAS-3-CITY</div>
                 <div className="micro break-words">
-                  A community-centered sustainability platform
+                  A community-centered sustainability & essential-infrastructure platform
                 </div>
               </div>
             </div>
