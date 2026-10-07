@@ -1,0 +1,54 @@
+{
+  "version": "4.0",
+  "section": "2245",
+  "total_locks": 953,
+  "status": "Preserved under R1_BASELINE",
+  "branch": "workspace-b",
+  "locks": [
+    {
+      "id": "LOCK-001",
+      "category": "Constitution",
+      "description": "Maintain ELAS-3-CITY constitutional structure per R1_BASELINE",
+      "enforced": true,
+      "risk": "HIGH if violated",
+      "source": "01_ARCH/01_Constitution.docx (R1_BASELINE)"
+    },
+    {
+      "id": "LOCK-002",
+      "category": "Canonical Model",
+      "description": "Preserve canonical model integrity across all facets",
+      "enforced": true,
+      "risk": "HIGH if violated",
+      "source": "01_ARCH/02_Canonical_Model.docx (R1_BASELINE)"
+    },
+    {
+      "id": "LOCK-003",
+      "category": "Three Facets",
+      "description": "Utilities (Energy/Water/Telcom) | NEXUS | BARBADOS pilot separation",
+      "enforced": true,
+      "risk": "HIGH if violated",
+      "source": "01_ARCH/03_Three_Facets.docx (R1_BASELINE)"
+    },
+    {
+      "id": "LOCK-004",
+      "category": "Digital Twin Thread",
+      "description": "Maintain twin thread consistency from architecture to implementation",
+      "enforced": true,
+      "risk": "HIGH if violated",
+      "source": "01_ARCH/04_Digital_Twin_Thread.docx (R1_BASELINE)"
+    },
+    {
+      "id": "LOCK-005",
+      "category": "NEXUS System",
+      "description": "Networked Ecosystem Intelligence & Unified Systems integrity",
+      "enforced": true,
+      "risk": "HIGH if violated",
+      "source": "01_ARCH/05_NEXUS.docx (R1_BASELINE)"
+    }
+  ],
+  "principles": [
+    "Principles → Architecture Locks → Canonical Semantics → Canonical Objects → Executable Contracts → APIs/Events → Workflows/State → Business Rules → Configuration → Implementation"
+  ],
+  "created": new Date().toISOString(),
+  "phase": "1_Foundation_Architecture_Locks"
+}
