@@ -1,0 +1,27 @@
+# Elas3City Repository Rules (Cline/VSCode)
+
+## CRITICAL BRANCH RULES
+
+1. **You may ONLY write to, edit, commit, and push to the `workspace-b` branch.**
+   - NEVER checkout, switch to, or modify `main` or `workspace-a` branches.
+   - NEVER merge from or into `main` or `workspace-a`.
+
+2. **`main` is protected.** Do NOT push, force-push, or fast-forward `main`. All changes stay on `workspace-b`.
+
+3. **`workspace-a` is reserved for the Lovable connection.** Do NOT push, force-push, or modify `workspace-a`. Lovable manages it independently.
+
+## WORKSPACE
+
+- This is the **active Cline/VSCode workspace** at `C:\\Users\\Adiip\\Elas3City`.
+- Code is edited here directly and pushed to the GitHub ELAS-3-CITY repo (`https://github.com/ANOVA-Consulting-Inc/elas-3-city.git`) on the `workspace-b` branch.
+
+## CLINE USER PROFILE RESTRICTIONS
+
+- **When this cline user profile is initiated, it should ONLY manipulate the Elas3City local and github workspace-b branch.**
+- **NO other repositories, branches, or workspaces can be manipulated by this profile.**
+- **All changes must be made on the `workspace-b` branch only.**
+## WORKFLOW
+
+- ALWAYS verify you are on `workspace-b` before editing files: `git branch --show-current` must return `workspace-b`.
+- After committing, push to the `origin/workspace-b` remote: `git push`.
+- Never revert or reset `workspace-b` without explicit user permission.
